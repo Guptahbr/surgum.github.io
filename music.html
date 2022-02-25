@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surgum.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="musicicon.png" type="image/x-icon">
+
+
+
+    <style>
+        body {
+
+            background: url("musicbg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+
+        .left {
+            margin: 28px 14px;
+
+            display: inline-block;
+        }
+
+        .left img {
+            width: 16%
+        }
+
+        img {
+
+            margin: 0px 73px;
+        }
+
+        .left div {
+            font-family: 'Pushster', cursive;
+            color: rgb(17, 16, 16);
+            animation-name: example;
+            animation-duration: 7s;
+            margin: 0px 7px;
+            position: relative;
+
+            animation-timing-function: ease-out;
+        }
+
+
+
+
+        @keyframes example {
+            00% {
+                color: rgb(17, 16, 16);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                color: yellow;
+                left: 50px;
+                top: 0px;
+            }
+
+            50% {
+                color: blue;
+                left: 50px;
+                top: 30px;
+            }
+
+            75% {
+                color: green;
+                left: 0px;
+                top: 30px;
+            }
+
+            100% {
+                color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .mid {
+            display: block;
+            width: 35%;
+            text-align: center;
+            margin: auto;
+            margin-top: -72px;
+            border: 3px solid black;
+            border-radius: 16px;
+        }
+
+        @media(min-width:450px) and (max-width:1023px) {
+
+            body {
+                background: url("musicbg1.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            .mid {
+                margin-top: 15px;
+                width: 353px;
+            }
+
+            .mid .nav li a {
+                color: black;
+
+            }
+
+            #container {
+                width: 100%;
+                position: relative;
+                margin: 0px auto;
+            }
+
+        }
+
+        @media (max-width:450px) {
+            body {
+                background: url(musicbg3.jpg);
+            }
+            .left{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .left div {
+               
+                font-size: 10px;
+                margin: auto;
+                
+            }
+
+            .left img {
+                width: 25px;
+                margin: auto;
+                
+                
+                
+            } 
+
+            .mid {
+                margin-top: 95px;
+                width: 200px;
+            }
+
+            .mid .nav li {
+                margin: -10px;
+                font-size: 12px;
+            }
+
+            .right {
+                position: absolute;
+                left: 35px;
+                margin: 70px auto;
+                width: 150px;
+            }
+
+            .right .search input {
+                width: 142px;
+            }
+
+
+
+
+            #container {
+                width: 100%;
+                position: relative;
+                margin: 0px auto;
+            }
+
+
+        }
+
+
+
+        .nav li {
+            display: inline-block;
+        }
+
+        .nav li a {
+
+            color: black;
+            text-decoration: none;
+            margin: auto;
+            padding: 0px 12px;
+            font-family: 'Pushster', cursive;
+
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            color: white;
+            text-decoration: underline;
+        }
+
+
+        .right {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        #container {
+
+            display: block;
+            margin-top: 50px;
+            padding: 2px 2px;
+            border-radius: 8px;
+            border: 2px solid black;
+            width: 237px;
+
+
+        }
+
+        .container-box h3,
+        .container-box h2 {
+
+            text-align: center;
+        }
+
+        .from-group input {
+            width: 170px;
+            display: block;
+            padding: 1px 5px;
+            margin: 2px auto;
+        }
+
+        .btn {
+            width: 70px;
+            padding: 5px 3px;
+            margin: 5px auto;
+            display: block;
+            background-color: black;
+            color: blanchedalmond;
+            border: 2px solid blanchedalmond;
+            border-radius: 8px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="music header.png" alt="">
+            <div>Welcome to the music world</div>
+
+        </div>
+        <div class="mid">
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Playlist</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder=" search music">
+            </div>
+
+        </div>
+    </header>
+    <section id="container">
+        <div class="container-box">
+            <h2>Get subscription only 50 Rs/month.</h2>
+            <h3>Register Here</h3>
+        </div>
+        <form action="noaction.php">
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your email id">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your mobile no.">
+            </div>
+            <button class="btn">Submit </button>
+        </form>
+        </div>
+    </section>
+</body>
+
+
+</html>
